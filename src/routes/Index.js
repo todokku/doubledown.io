@@ -1,7 +1,8 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import React from 'react';
+import { Switch } from 'react-router-dom';
+import Route from './Route';
 
-import Leaderboard from '../pages/Leaderboard'
+import Leaderboard from '../pages/leaderboard'
 import Login from '../pages/login'
 import MainMenu from '../pages/mainMenu'
 import Play from '../pages/play'
