@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import Menu from '../components/Menu'
 
 export default class MainMenu extends Component {
 render () {
   return (
     <>
-      <h1>Main Menu</h1>
+      <Menu/>
     </>
   )
 
