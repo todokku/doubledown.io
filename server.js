@@ -1,10 +1,5 @@
 const express = require("express");
-const fs = require("fs");
-const sqlite = require("sql.js");
 
-const filebuffer = fs.readFileSync("db/usda-nnd.sqlite3");
-
-const db = new sqlite.Database(filebuffer);
 
 const app = express();
 
@@ -14,6 +9,10 @@ app.set("port", process.env.PORT || 3001);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+let suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'];
+let values = ['Ace', 'King', 'Queen', 'Jack', 'Ten', 'Nine', 'Eight', 'Seven', 'Six', 'Five', 'Four', 'Three', 'Two']
+let numValues = [11, 10, 10, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2]
 
 function createDeck() {
   let deck = [];
