@@ -10,7 +10,7 @@ import '../css/App.css';
 function App() {
   return (
     <Router>
-      <div>
+      <div className='container'>
       <Switch>
         <Route exact path="/" component={MainMenu} />
         <Route exact path="/play" component={Play} />
