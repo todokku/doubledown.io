@@ -4,7 +4,9 @@ This is the source code for doubledown.io. A blackjack game where you are encour
 
 ### Goals
 
-- [] home page / tutorial / login logic
+- [] home page 
+- [] login logic
+- [] tutorial page
 - [] game / dealer logic
 - [] deck size / bank logic
 - [] database to store info
