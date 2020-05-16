@@ -19,6 +19,7 @@ Presently no open bugs with doubledown.io
 ### Build List
 
 - React.js (create-react-app base)
+- Express / REST
 - SASS / Bootstrap Styling
 - NoSQL database
 - Firebase Authentication
